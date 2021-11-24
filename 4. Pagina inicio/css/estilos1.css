@@ -1,0 +1,161 @@
+:root {
+     --colortextos: #49454567;
+}
+body {
+ background-image: url('../imagenes/fondo.jpeg');
+height: 50px;
+ background-repeat: no-repeat;
+ overflow: hidden;
+ background-size: cover;
+ background-color:lightgray;
+ display: flex;
+}
+
+
+
+*,
+::before,
+::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+
+
+img {
+  width: 700px;
+  height: 60%;
+  float: right:1px;
+  margin: 10px;
+}
+
+
+
+
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  margin: 0 20px;
+}
+.fab {
+  font-size: 30px;
+  padding: 0 25px;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  width:215px;
+  height: 90px;
+  background: var(--white);
+  transform: rotate(-30deg) skew(25deg);
+  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+  transition: var(--time);
+}
+a:before,
+a:after {
+  content: '';
+  position: absolute;
+  background: var(--gray);
+  transition: var(--time);
+}
+a:before {
+  top:10px;
+  left:-20px;
+  height:100%;
+  width:20px;
+  transform: rotate(0deg) skewY(-45deg);
+}
+a:after {
+  bottom:-20px;
+  left:-10px;
+  height:20px;
+  width:100%;
+  transform: rotate(0deg) skewX(-45deg);
+}
+a:hover {
+  transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
+  box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+  color: var(--white);
+}
+
+
+/* ¿QUIENES SOMOS? */
+li:hover:nth-child(1) a{
+  background: #FFC338 ;
+  margin: 30PX;
+}
+li:hover:nth-child(1) a:before{
+  background: #FDB91D;
+}
+li:hover:nth-child(1) a:after{
+  background: #FDB91D;
+}
+
+/* SERVICIOS */
+li:hover:nth-child(2) a{
+  background:  #2EE7E9;
+    margin: 30PX;
+}
+li:hover:nth-child(2) a:before{
+  background: #4a69ad   ;
+}
+li:hover:nth-child(2) a:after{
+  background: #4a69ad ;
+}
+
+/*PRODUCTOS */
+li:hover:nth-child(3) a{
+  background: #A0EF46;
+    margin: 40PX;
+}
+li:hover:nth-child(3) a:before{
+  background:#93EB2F;
+}
+li:hover:nth-child(3) a:after{
+  background: #93EB2F;
+}
+
+/*VOLVER A INICIO */
+li:hover:nth-child(4) a{
+  background: #93EB2F ;
+    margin: 40PX;
+}
+li:hover:nth-child(4) a:before{
+  background:#93EB2F;
+}
+li:hover:nth-child(4) a:after{
+  background: #93EB2F;
+}
+
+
+
+.buttons {
+  min-width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 90px;
+  height: 60px;
+
+  line-height: 20px;
+  text-align: center;
+  background: red;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .2s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
+}

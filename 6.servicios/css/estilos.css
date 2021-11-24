@@ -1,0 +1,144 @@
+*/:root
+{--blue:#007bff;
+
+ --font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
+ *,::after,
+ ::before{
+   box-sizing:border-box
+   }
+   body{
+   background-image: url('../imagenes/fondo.jpg');
+   background-repeat: no-repeat;
+   overflow: hidden;
+   background-size: cover;
+   background-color:lightgray;
+
+   }
+   .Primer_contenedor{
+     width: 500px;
+     margin: 10% auto;
+     border-radius: 20px;
+     background-color: rgba(10, 0.5, 0.1, 0.6);
+     box-shadow: 0 0 20px blue ;
+   }
+   .Encabezado{
+     text-align:  center;
+     padding-top: 10px;
+   }
+   .Encabezado h1{
+     background: #000;
+     background: linear-gradient(90deg,#37FC2E , #1695FF   );
+     font-family: system-ui;
+     line-height: 5%;
+     -webkit-text-fill-color: transparent;
+     -webkit-background-clip: text;
+     margin-bottom: 50px;
+   }
+   .bloque1{
+
+   background-color: ;
+   width: 10;
+   color: white;
+   }
+
+
+
+
+   /*iconos redes1*/
+   *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   #botonMas{
+       display: none;
+   }
+   .contenedor{
+       position: fixed;
+       bottom: 20px;
+       right: 20px;
+   }
+   .redes a, .botonMas label{
+       display: block;
+       text-decoration: none;
+       background: #E7E37C ;
+       color: black;
+       width: 55px;
+       height: 55px;
+       line-height: 55px;
+       text-align: center;
+       border-radius: 50%;
+       box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+       transition: all 500ms ease;
+
+   }
+   .redes a:hover{
+       background: #7CE3E7  ;
+       color:#5B12F9;
+   }
+   .redes a{
+       margin-bottom: -15px;
+       opacity: 0;
+       visibility: hidden;
+   }
+   #botonMas:checked~ .redes a{
+       margin-bottom: 10px;
+       opacity: 1;
+       visibility: visible;
+   }
+   .botonMas label{
+       cursor: pointer;
+       background: #F8FF1D;
+       font-size: 23px;
+   }
+   #botonMas:checked ~ .botonMas label{
+       transform: rotate(135deg);
+       font-size: 25px;
+   }
+
+   /*iconos redes2*/
+   #botonMas2{
+       display: none;
+   }
+   .contenedor2{
+       position: fixed;
+       bottom: 20px;
+       left:  20px;
+   }
+   .redes a, .botonMas2 label{
+       display: block;
+       text-decoration: none;
+       background: #E7E37C ;
+       color: black;
+       width: 55px;
+       height: 55px;
+       line-height: 55px;
+       text-align: center;
+       border-radius: 50%;
+       box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+       transition: all 500ms ease;
+
+   }
+   .redes a:hover{
+       background: #7CE3E7  ;
+       color:#5B12F9;
+   }
+   .redes a{
+       margin-bottom: -15px;
+       opacity: 0;
+       visibility: hidden;
+   }
+   #botonMas2:checked~ .redes a{
+       margin-bottom: 10px;
+       opacity: 1;
+       visibility: visible;
+   }
+   .botonMas2 label{
+       cursor: pointer;
+       background: #F8FF1D;
+       font-size: 23px;
+   }
+   #botonMas2:checked ~ .botonMas2 label{
+       transform: rotate(135deg);
+       font-size: 25px;
+   }
